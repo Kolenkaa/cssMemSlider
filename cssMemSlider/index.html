@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<title>cssMemSlider</title>
 </head>
+
 <body>
-	
+	<header>
+		<h1 class="slider__title">CSS Mem Slider</h1>
+	</header>
+	<main>		
+		<div class="container">			
+			<div class="slider__wrapper">
+				<input type="radio" class="s1" name="slider-control" id="s1" checked>
+				<input type="radio" class="s2" name="slider-control" id="s2">
+				<input type="radio" class="s3" name="slider-control" id="s3">
+				<input type="radio" class="s4" name="slider-control" id="s4">
+				<div class="slider">
+					<div class="slide slide1">
+						<img src="./assets/images/fire.jpg" alt="">
+					</div>
+					<div class="slide slide2">
+						<img src="./assets/images/cald.jpg" alt="">
+					</div>
+					<div class="slide slide3">
+						<img src="./assets/images/cat_snow.jpg" alt="">
+					</div>
+					<div class="slide slide4">
+						<img src="./assets/images/ded.jpg" alt="">
+					</div>
+				</div>
+				<div class="slider__down-panel">
+					<div class="slider__text">
+						<p class="slider__text-descr slider__text-descr1">It's fine</p>
+						<p class="slider__text-descr slider__text-descr2">Everythings is fine</p>
+						<p class="slider__text-descr slider__text-descr3">I'm fine. How are you?</p>
+						<p class="slider__text-descr slider__text-descr4">I'm just fine. I just smile...</p>
+					</div>
+					<div class="slider__buttons">
+						<label class="slider__control slider__control-1" for="s1">
+							<span class="slider__button first-button"></span>
+						</label>
+						<label class="slider__control slider__control-2" for="s2">
+							<span class="slider__button second-button"></span>
+						</label>
+						<label class="slider__control slider__control-3" for="s3">
+							<span class="slider__button third-button"></span>
+						</label>
+						<label class="slider__control slider__control-4" for="s4">
+							<span class="slider__button fourth-button"></span>
+						</label>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</main>
 </body>
+
 </html>

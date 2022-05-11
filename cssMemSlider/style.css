@@ -9,42 +9,39 @@ body {
 	background-color: aliceblue;
 }
 .slider__title {
-	padding-top: 10vh;
-	padding-bottom: 10vh;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
 	text-align: center;
 }
 .container {
-	max-width: 60rem;
+	max-width: 60rem;	
 	background-color: darkgrey;
 	margin: 0 auto;
-}
-.slider__wrapper {	
+	border-radius: 2%;
 }
 .slider {
 	display: flex;
 	max-width: 47rem;
-	width: 100%;	
+	width: 100%;		
 	overflow: hidden;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-	margin: 0 auto;
+	margin: 0 auto;	
 }
-.slide {
-	width: 0;
+.slide {				
+	min-height: 38rem
 }
-.slide1 {
+
+.slide__img {
+	transition: 0.9s;
+	display: block;
+	width: 0;	
 }
-.slide2 {
-}
-.slide3 {
-}
-.slide4 {
-}
-.slider__down-panel {	
+.slider__bottom {	
 	display: flex;
 	max-width: 47rem;
 	width: 100%;
-	/*overflow: hidden;*/	
+	overflow: hidden;
 	padding-bottom: 2rem;
 	margin: 0 auto;
 }
@@ -53,18 +50,10 @@ body {
 	justify-content: flex-start;
 	width: 70%;	
 }
-.slider__text-descr {
-	padding: 0.3rem;
-	margin: 0.3rem;	
+.slider__text-descr {	
 	opacity: 0;	
-}
-.slider__text-descr1 {	
-}
-.slider__text-descr2 {	
-}
-.slider__text-descr3 {
-}
-.slider__text-descr4 {
+	font-size: 0;
+	transition: 1s;	
 }
 .slider__buttons {	
 	display: flex;
@@ -74,11 +63,8 @@ body {
 .slider__control {
 	display: flex;	
 	cursor: pointer;
-	padding: 0.3rem;
-	margin: 0.3rem;
-}
-
-.slider__control-1 {
+	padding:0 0.3rem;
+	margin:0 0.3rem;
 }
 .slider__button { 		
 	width: 1rem;
@@ -92,34 +78,18 @@ body {
 .slider__button:active {
 	background-color: rgb(80, 138, 255);	
 }
-.first-button {
-}
-.slider__control-2 {
-}
-.second-button {
-}
-.slider__control-3 {
-}
-.third-button {
-}
-.slider__control-4 {
-}
-.fourth-button {
-}
-
 .s1:checked~.slider .slide1 img,
 .s2:checked~.slider .slide2 img,
 .s3:checked~.slider .slide3 img,
 .s4:checked~.slider .slide4 img {
 	width: 47rem;
 	position: relative;
-	z-index: 2;
+	z-index: 2;	
 }
-
-.s1:checked~.slider__down-panel .slider__text-descr1,
-.s2:checked~.slider__down-panel .slider__text-descr2,
-.s3:checked~.slider__down-panel .slider__text-descr3,
-.s4:checked~.slider__down-panel .slider__text-descr4  {
+.s1:checked~.slider__bottom .slider__text-descr1,
+.s2:checked~.slider__bottom .slider__text-descr2,
+.s3:checked~.slider__bottom .slider__text-descr3,
+.s4:checked~.slider__bottom .slider__text-descr4  {
 opacity: 1;
 font-size: 1em;
 }

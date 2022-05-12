@@ -68,6 +68,10 @@ body {
 	padding:0 0.3rem;
 	margin:0 0.3rem;
 }
+.slider__control-4 {
+	margin-right: 0;
+	padding-right: 0;
+}
 .slider__button { 		
 	width: 1rem;
 	height: 1rem;
@@ -78,7 +82,7 @@ body {
 .slider__button:checked {
 	background-color: #dcdeea;
 }
-.slider__button:hover {
+.slider__control:hover .slider__button{
 	background-color: rgb(50, 72, 101);
 }
 .slider__button:active {
@@ -104,6 +108,8 @@ font-size: 1em;
 	background-color: #8f8b8b;
 	border-color: #8f8b8b;
 }
+
+
 @media (max-width: 1000px) {
 	.container {
 		max-width: 40rem;
@@ -118,10 +124,10 @@ font-size: 1em;
 	.slider {
 		justify-content: center;
 		max-height:25rem;
+		max-width: 30rem;
 	}	
 	.slider__bottom {
-		flex-direction: column-reverse;
-		align-items: center;
+		max-width: 30rem;
 		row-gap: 2rem;
 	}
 }
@@ -140,6 +146,8 @@ font-size: 1em;
 		max-height:15rem;
 	}	
 	.slider__bottom {	
+		flex-direction: column-reverse;
+		align-items: center;
 		row-gap: 1rem;
 	}
 }
